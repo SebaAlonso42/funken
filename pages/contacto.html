@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funken Contacto</title>
+
+
+    <link rel="shortcut icon" href="multimedia/favicon2.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- OPCION 1. La recomendada -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+
+<body>
+<main class="contactoBg">
+
+    <header>
+
+        <nav>
+            <ul class="listas">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/servicios.html">Servicios</a></li>
+                <li><a href="../pages/galeria.html">Gallery</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <form> 
+
+        <h3>Contacta con Funken</h3> 
+
+        <label for="NombreApellido">Nombre y Apellido:</label> 
+        <input type="text" name="NombreApellido">
+
+        <label for="Correo">Correo Electronico:</label>
+        <input type="email" name="Correo">
+
+        <label for="Pass">Contraseña</label>
+        <input type="password" name="Pass">
+
+        <label for="Mensaje"> Dejanos tu mensaje</label>
+        <textarea name="Mensaje" cols="30" rows="10"></textarea> 
+
+        <label for="Genero"><b>Género</b></label>
+        <input type="Radio" value="F" name="sexo"> F
+        <input type="Radio" value="M" name="sexo"> M
+        <input type="Radio" value="NC" name="sexo"> NC
+
+        <section>
+        <label for="terminos"><b>Selecciona tu interes</b></label>
+        <input type="checkbox" value="1" name="terminos" required> Sonido
+        <input type="checkbox" value="2" name="terminos"> Moda
+        <input type="checkbox" value="3" name="terminos"> Aromas
+        </section>
+
+        <fieldset>
+            <label for="pais"><b>País</b></label>
+            <select name="Tu pais">
+                <option  value="ARG"> Argentina </option>
+                <option  value="ESP"> España</option>
+            </select>
+
+            <legend><b>Tus datos de Usuario</b></legend>
+
+            <label for="NombreApellido">Nombre y Apellido</label>
+            <input type="text" name="NombreApellido">
+
+            <label for="Correo">Correo Electronico</label>
+            <input type="email" name="Correo">
+
+            <label for="Pass">Contraseña</label>
+            <input type="password" name="Pass">
+        </fieldset>
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <footer>
+        <p>Todos los derechos reservados a Funken &reg; </p>
+
+</main>
+</body>
+
+
+
+</html>
