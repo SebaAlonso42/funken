@@ -1,17 +1,3 @@
-/* h1{
-    color: #ffd369;
-}
-
-body{
-    
-@media only screen and (max-width: 600px) {
-    body {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-}
-}
-} */
 
 * {
     margin: 0;
@@ -23,66 +9,45 @@ html{
     font-size: 62.5%;
 }
 
-.grid {
-    display: grid;
-    grid-template-areas:
-    "header"
-    "nav"
-    "titulos"
-    "subtitulos"
-    "texto"
-    "imagen1"
-    "imagen2"
-    "imagen3";
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-}
-
-.header{
-    grid-area: header;
-}
-
-.nav{
-    grid-area: nav;
-}
-
-
 body{
-    background-color: #FAFAFA;
+    background-image: url("https://img.freepik.com/free-vector/white-background-with-zigzag-pattern-design_1017-33197.jpg?w=2000");
+    background-size: cover;
+
 }
 
-nav{
-    background-color: #ECECEC;
-    display: inline-block;
-    border-radius:  10px;
-    padding: 5px 2px;
-}
 
 
 p{
-    background-color: #ECECEC;
     display: inline-block;
     color: #545454;
-    padding: 5px 2px;
+    padding: 5px 5px;
     font-family: 'Montserrat', sans-serif;
-    margin: 10px 50px;
+    margin: 2rem 3rem;
 }
 
 h1{
-    color: #ffd369;
-    background-color: #ECECEC;
+    color: #ffe19a;
     text-shadow: 4px 4px 8px #000000;
-    margin: 20px 50px;
 }
 
 h2{
-    color: #ffd369;
-    background-color: #ECECEC;
+    color: #ffe19a;
     text-shadow: 2px 2px 4px #000000;
-    margin: 10px 50px;
     text-align: center;
 }
 
+
+.glowing-text{
+    Font-size: 50px;
+    Color: rgb(240, 240, 240);
+    Text-align: center;
+    Animation: glow 0.45s ease-in-out infinite alternate;
+    }
+    
+    @keyframes glow{
+    From{Text-shadow: 1px 2px 3px #ffe19a, 3px 2px 1px #545454 2px 3px 5px pink, 4px 4px 3px brown}
+    To {text-shadow: 1px 0px 4px #007a0844, 2px 2px 4px rgb(0, 101, 39), 2px 4px 2px rgb(242, 249, 172), 1px 3px 1px rgb(199, 199, 199)}
+    }
 
 header{
     display: inline;
@@ -121,7 +86,6 @@ header{
     font-family: 'Montserrat', Helvetica, sans-serif;
     text-align: center;
     line-height: 2;
-    grid-area: titulos;
 }
 
 .subtitulos{
@@ -132,39 +96,15 @@ header{
     font-family: 'Montserrat', Helvetica, sans-serif;
     text-align: center;
     line-height: 2;
-    grid-area: subtitulos;
 }
 
-.div1 {
-    padding: 200px;
-    margin: 50px;
-    background-color: #ffd369;
-    border-radius:  5px;
-    grid-area: imagen1;
+#card{
+    margin: 3rem;
 }
 
-.div2 {
-    padding:200px;
-    margin: 50px;
-    background-color: #ffd369;
-    border-radius:  5px;
-    grid-area: imagen2;
-}
-
-.div3 {
-    padding:200px;
-    margin: 50px;
-    background-color: #ffd369;
-    border-radius:  5px;
-    grid-area: imagen3;
-}
-
-.div4 {
-    padding:100px;
-    margin: 20px;
-    background-color: #ffd369;
-    border-radius:  5px;
-    grid-area: imagen4;
+#textoAbout{
+    margin-top: 3rem;
+    margin-bottom: 10rem;
 }
 
 
@@ -207,12 +147,23 @@ section{
 }
 
 form{
-    position: relative;
-    left: 500px;
-    height: 750px;
+    margin-top: 4rem;
+    height: 60rem;
+}
+
+img{
+height: 50rem;
+width: 80rem;
 }
 
 .contactoBg{
     background-color: #ECECEC
 }
 
+.card:hover{
+    height: 39px;
+    top: -4px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}

@@ -25,24 +25,32 @@
 </head>
 
 
-<body class="container-fluid">
+<body class="container-fluid flex-column">
 <main>
 
     <header>
 
-        <nav>
-            <ul class="listas">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/galeria.html">Gallery</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-                <li><a href="../pages/about.html">About</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        <a class="nav-link" href="/pages/servicios.html">Servicios</a>
+                        <a class="nav-link" href="/pages/galeria.html">Galería</a>
+                        <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="/pages/about.html">About</a>
+                    </div>
+                </div>
+            </div>
         </nav>
 
     </header>
 
-    <form> 
+    <form"> 
 
         <h3>Contacta con Funken</h3> 
 
@@ -90,8 +98,8 @@
         </fieldset>
 
 
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Reset">
+        <input class="nav" type="submit" value="Enviar">
+        <input class="nav" type="reset" value="Reset">
 
     </form>
 
