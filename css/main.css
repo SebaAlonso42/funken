@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +9,16 @@ html {
 
 body {
   background-image: url("https://img.freepik.com/free-vector/white-background-with-zigzag-pattern-design_1017-33197.jpg?w=2000");
-  background-size: cover; }
+  background-size: adjust; }
 
 p {
   display: inline-block;
   color: #545454;
-  padding: 5px 5px;
+  padding: 1rem 1.5rem;
   font-family: 'Montserrat', sans-serif;
-  margin: 2rem 3rem; }
+  margin: 2rem 3rem;
+  text-align: center;
+  text-shadow: 4px 4px 8px #7f7f7f; }
 
 h1 {
   color: #ffe19a;
@@ -26,17 +29,9 @@ h2 {
   text-shadow: 2px 2px 4px #000000;
   text-align: center; }
 
-.glowing-text {
-  Font-size: 50px;
-  Color: #f0f0f0;
-  Text-align: center;
-  Animation: glow 0.45s ease-in-out infinite alternate; }
-
-@keyframes glow {
-  From {
-    Text-shadow: 1px 2px 3px #ffe19a, 3px 2px 1px #545454 2px 3px 5px pink, 4px 4px 3px brown; }
-  To {
-    text-shadow: 1px 0px 4px #007a0844, 2px 2px 4px #006527, 2px 4px 2px #f2f9ac, 1px 3px 1px #c7c7c7; } }
+h5 {
+  text-align: center;
+  font-size: medium; }
 
 header {
   display: inline;
@@ -81,7 +76,9 @@ header {
   line-height: 2; }
 
 #card {
-  margin: 3rem; }
+  font-size: medium;
+  width: 25rem;
+  margin: 1rem; }
 
 #textoAbout {
   margin-top: 3rem;
@@ -97,7 +94,11 @@ label {
   display: block; }
 
 fieldset {
-  display: inline; }
+  display: inline;
+  margin-bottom: 8rem; }
+
+label, input, fieldset, section {
+  font-size: 12px; }
 
 .parrafoIndex {
   text-align: center;
@@ -118,15 +119,26 @@ section {
   align-items: center; }
 
 form {
-  margin-top: 4rem;
-  height: 60rem; }
+  margin-top: 8rem; }
 
-.contactoBg {
-  background-color: #ECECEC; }
+legend {
+  margin-top: 8rem; }
 
 .card:hover {
   height: 39px;
-  top: -4px;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center; }
+  top: -4px; }
+
+h1, h2 {
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  color: transparent;
+  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms; }
+
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px; }
+  100% {
+    background-size: 300% 300%; } }
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff; } }

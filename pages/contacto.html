@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 
 <head>
@@ -11,7 +11,7 @@
     <title>Funken Contacto</title>
 
 
-    <link rel="shortcut icon" href="multimedia/favicon2.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../multimedia/favicon2.ico" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
 </head>
 
 
-<body class="container-fluid flex-column">
+<body class="container-fluid flex-column img-fluid">
 <main>
 
     <header>
@@ -37,12 +37,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        <a class="nav-link" href="/pages/servicios.html">Servicios</a>
-                        <a class="nav-link" href="/pages/galeria.html">Galería</a>
-                        <a class="nav-link" href="/pages/contacto.html">Contacto</a>
-                        <a class="nav-link" href="/pages/about.html">About</a>
+                    <div class="navbar-nav display-6">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </div>
                 </div>
             </div>
@@ -50,9 +50,12 @@
 
     </header>
 
-    <form"> 
+<div class="container-fluid">
+<div class="row">
+<div class="col">
+    <form> 
 
-        <h3>Contacta con Funken</h3> 
+        <h3 class="display-6"><b>Contacta con Funken</b></h3> 
 
         <label for="NombreApellido">Nombre y Apellido:</label> 
         <input type="text" name="NombreApellido">
@@ -73,9 +76,8 @@
 
         <section>
         <label for="terminos"><b>Selecciona tu interes</b></label>
-        <input type="checkbox" value="1" name="terminos" required> Sonido
-        <input type="checkbox" value="2" name="terminos"> Moda
-        <input type="checkbox" value="3" name="terminos"> Aromas
+        <input type="checkbox" value="1" name="terminos"> Sonido
+        <input type="checkbox" value="2" name="terminos"> Aromas
         </section>
 
         <fieldset>
@@ -84,8 +86,10 @@
                 <option  value="ARG"> Argentina </option>
                 <option  value="ESP"> España</option>
             </select>
+</div>
 
-            <legend><b>Tus datos de Usuario</b></legend>
+<div class="col">
+            <legend class="display-6"><b>Tus datos de Usuario</b></legend>
 
             <label for="NombreApellido">Nombre y Apellido</label>
             <input type="text" name="NombreApellido">
@@ -95,16 +99,22 @@
 
             <label for="Pass">Contraseña</label>
             <input type="password" name="Pass">
+
         </fieldset>
 
+            <input class="nav m-3" type="submit" value="Enviar">
+            <input class="nav m-3" type="reset" value="Reset">
 
-        <input class="nav" type="submit" value="Enviar">
-        <input class="nav" type="reset" value="Reset">
 
     </form>
 
+</div>
+</div>
+</div>
+
     <footer>
         <p>Todos los derechos reservados a Funken &reg; </p>
+    </footer>
 
 </main>
 
